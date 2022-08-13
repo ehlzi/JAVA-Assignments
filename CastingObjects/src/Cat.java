@@ -1,6 +1,6 @@
-public class Rabbit extends Animal {
+public class Cat extends Animal {
 
-    //String color;
+    int jump;
 
     void print(){
         System.out.println("I am a dog");
