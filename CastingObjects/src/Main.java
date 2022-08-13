@@ -31,10 +31,6 @@ public class Main {
         Rabbit rabbit = new Rabbit();
         Cat cat = new Cat();
 
-        train(dog);
-        train(rabbit);
-        train(cat);
-
         dog.name = "Rex";
         rabbit.name = "Floof";
         cat.name = "Tom";
@@ -43,7 +39,11 @@ public class Main {
         rabbit.speed = 15;
         cat.jump = 8;
 
+        train(dog);
         train2(dog);
+        train(rabbit);
+        train(cat);
+
         train2(rabbit);
         train2(cat);
     }

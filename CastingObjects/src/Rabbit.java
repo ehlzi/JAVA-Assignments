@@ -3,6 +3,6 @@ public class Rabbit extends Animal {
     int speed;
 
     void print(){
-        System.out.println("I am a dog");
+        System.out.println("I am a rabbit");
     }
 }
