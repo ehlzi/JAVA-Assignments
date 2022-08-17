@@ -4,12 +4,13 @@ public class Board {
 
     public static void main() {
 
+        final int scRange = 9;
         Scanner sc = new Scanner(System.in);
 
         //Input
         String uI = sc.nextLine();
 
-        if (uI.length() == 9) {
+        if (uI.length() == scRange) {
 
             //Boundaries
             String boundT = "---------";
@@ -22,9 +23,10 @@ public class Board {
             String line3 = boundL + uI.charAt(6) + " " + uI.charAt(7) + " " + uI.charAt(8) + boundR;
 
             //Board
-            String board = line1 + "\n" + line2 + "\n" + line3;
+            String layout = line1 + "\n" + line2 + "\n" + line3;
+            String board = boundT + "\n" + layout + "\n" + boundB;
 
-            System.out.println(boundT + "\n" + board + "\n" + boundB);
+            System.out.println(board);
 
         } else {
 
