@@ -1,55 +1,35 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Board {
 
     public static void main() {
 
-        //Marks
-        String X = "X ";
-        String O = "O ";
-
-        //String[] userInput = {X, O, X, O, X, O, X, O, X};
-
-        //Boundaries
-        String boundT = "---------";
-        String boundB = "---------";
-        String boundL = "| ";
-        String boundR = "|";
-        /**/
-        String line1 = boundL + X + O + X + boundR;
-        String line2 = boundL + O + X + O + boundR;
-        String line3 = boundL + X + O + X + boundR;
-
-        //Board
-        String board = line1 + "\n" + line2 + "\n" + line3;
-
-        //System.out.println(boundT + "\n" + board + "\n" + boundB);
-
         Scanner sc = new Scanner(System.in);
 
-        /*
-        //Array Scanner Setup
-        int length = 1;
-        int arrLength = 1;
-        String[] arr = new String[arrLength];
-        */
-
         //Input
-        int userInput = sc.nextInt();
-        System.out.println(userInput);
+        String uI = sc.nextLine();
 
-        /*
-        Arrays.fill(arr, 0, length, uInput);
-        Arrays.fill(arr, length, arrLength, uInput);
-         */
+        if (uI.length() == 9) {
 
-        /*
-        if (uInput.length == arrLength) {
-            System.out.println("Yeet");
+            //Boundaries
+            String boundT = "---------";
+            String boundB = "---------";
+            String boundL = "| ";
+            String boundR = " |";
+
+            String line1 = boundL + uI.charAt(0) + " " + uI.charAt(1) + " " + uI.charAt(2) + boundR;
+            String line2 = boundL + uI.charAt(3) + " " + uI.charAt(4) + " " + uI.charAt(5) + boundR;
+            String line3 = boundL + uI.charAt(6) + " " + uI.charAt(7) + " " + uI.charAt(8) + boundR;
+
+            //Board
+            String board = line1 + "\n" + line2 + "\n" + line3;
+
+            System.out.println(boundT + "\n" + board + "\n" + boundB);
+
         } else {
-            System.out.println("Please enter 9 items to fill the board!");
-        }
-        */
 
+            System.out.println("Please insert 9 items!");
+            main();
+        }
     }
 }

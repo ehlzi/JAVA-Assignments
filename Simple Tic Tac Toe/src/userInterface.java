@@ -9,14 +9,18 @@ public class userInterface {
         userX uX = new userX();
         userO uO = new userO();
 
-        System.out.println("\n" + "What's the name for Player X?" + "\n");
+        System.out.println(
+                """
+                What's the name for Player X?
+                """);
         String userX = sc.nextLine();
         uX.setName(userX);
 
-        System.out.println("\n" + "What's the name for Player O?" + "\n");
+        System.out.println(
+                """
+                What's the name for Player O?
+                """);
         String userO = sc.nextLine();
         uO.setName(userO);
-
-        sc.close();
     }
 }

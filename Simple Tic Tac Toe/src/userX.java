@@ -1,14 +1,14 @@
 public class userX {
 
-    private String name; // private = restricted access
+    private static String name; // private = restricted access
 
     // Getter
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
     // Setter
     public void setName(String newName) {
-        this.name = newName;
+        name = newName;
     }
 }
