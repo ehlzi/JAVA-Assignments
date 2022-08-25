@@ -2,6 +2,7 @@
 
 public class Main {
 
+    static char[][] board = BoardX.getBoard();
     public static void main(String[] args) {
         System.out.println(
                 """
@@ -17,7 +18,7 @@ public class Main {
                 Here's the board, are you ready to play?
                 Draw the board if so.
                 """);
-        char[][] board = BoardX.getBoard();
+
         BoardX.printBoard(board);
 
         System.out.println("Who's first?");
