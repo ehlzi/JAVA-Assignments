@@ -16,14 +16,23 @@ public class BoardX {
         char[][] board = new char[3][3];
         String boardInput = sc.next();
         int readChar = 0;
+        final String scRange = "_________";
 
-        for (int i = 0; i <= range; i++) {
+        if (boardInput.length() == scRange.length()) {
 
-            for (int j = 0; j <= range; j++) {
+            for (int i = 0; i <= range; i++) {
 
-                board[i][j] = boardInput.charAt(readChar);
-                readChar++;
+                for (int j = 0; j <= range; j++) {
+
+                    board[i][j] = boardInput.charAt(readChar);
+                    readChar++;
+                }
             }
+
+        } else {
+
+            System.out.println("Please insert 9 items!");
+            getBoard();
         }
 
         return board;
