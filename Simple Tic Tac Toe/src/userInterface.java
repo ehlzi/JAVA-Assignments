@@ -2,7 +2,7 @@ import java.util.*;
 
 public class userInterface {
 
-    public static void main() {
+    public static void getUser() {
 
         //Scanner Input and Variables
         Scanner sc = new Scanner(System. in);

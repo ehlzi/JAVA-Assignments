@@ -7,7 +7,7 @@ public class Main {
                 """
                 Welcome to Elzie's Tic-Tac-Toe!"
                 """);
-        userInterface.main();
+        userInterface.getUser();
 
         System.out.println(
                 "Welcome " + userX.getName() + " and " + userO.getName() +
@@ -17,7 +17,8 @@ public class Main {
                 Here's the board, are you ready to play?
                 Draw the board if so.
                 """);
-        Board.main();
+        char[][] board = BoardX.getBoard();
+        BoardX.printBoard(board);
 
         System.out.println("Who's first?");
     }

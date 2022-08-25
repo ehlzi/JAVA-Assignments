@@ -2,13 +2,13 @@ import java.util.*;
 
 public class Board {
 
-    public static void main() {
+    static final int scRange = 9;
 
-        final int scRange = 9;
-        Scanner sc = new Scanner(System.in);
+    //Input
+    static Scanner sc = new Scanner(System.in);
+    static String uI = sc.nextLine();
 
-        //Input
-        String uI = sc.nextLine();
+    public static void board() {
 
         if (uI.length() == scRange) {
 
@@ -31,7 +31,7 @@ public class Board {
         } else {
 
             System.out.println("Please insert 9 items!");
-            main();
+            board();
         }
     }
 }
