@@ -2,22 +2,23 @@
 
 public class Main {
 
-    static char[][] board = BoardX.getBoard();
     public static void main(String[] args) {
         System.out.println(
                 """
                 Welcome to Elzie's Tic-Tac-Toe!"
                 """);
-        userInterface.getUser();
+        //userInterface.getUser();
 
         System.out.println(
                 "Welcome " + userX.getName() + " and " + userO.getName() +
-                """
-                
-                
-                Here's the board, are you ready to play?
-                Draw the board if so.
-                """);
+                        """
+                        
+                        
+                        Here's the board, are you ready to play?
+                        Draw the board if so.
+                        """);
+
+        char[][] board = BoardX.getBoard();
 
         BoardX.printBoard(board);
 

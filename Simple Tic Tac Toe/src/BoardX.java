@@ -14,14 +14,14 @@ public class BoardX {
     public static char[][] getBoard() {
 
         char[][] board = new char[3][3];
-        String state = sc.next();
+        String boardInput = sc.next();
         int readChar = 0;
 
         for (int i = 0; i <= range; i++) {
 
             for (int j = 0; j <= range; j++) {
 
-                board[i][j] = state.charAt(readChar);
+                board[i][j] = boardInput.charAt(readChar);
                 readChar++;
             }
         }
@@ -37,10 +37,10 @@ public class BoardX {
 
             System.out.print(boundL);
 
-                for (int j = 0; j <= range; j++) {
+            for (int j = 0; j <= range; j++) {
 
-                    System.out.print(getBoard[i][j] + " ");
-                }
+                System.out.print(getBoard[i][j] + " ");
+            }
 
             System.out.print(boundR);
             System.out.println();
