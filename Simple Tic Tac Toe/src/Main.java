@@ -1,28 +1,29 @@
+import java.util.*;
+
 //package tictactoe;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Welcome to Elzie's Tic-Tac-Toe!");
+        userInterface.getUser();
+
+        System.out.println("Welcome " + userX.getName() + " and " + userO.getName() + "\n");
         System.out.println(
                 """
-                Welcome to Elzie's Tic-Tac-Toe!"
+                
+                Here's the board, are you ready to play? 
+                
+                "Player X is first! Let's GO!!"
                 """);
-        //userInterface.getUser();
 
-        System.out.println(
-                "Welcome " + userX.getName() + " and " + userO.getName() +
-                        """
-                        
-                        
-                        Here's the board, are you ready to play?
-                        Draw the board if so.
-                        """);
+        //board.printBoard();
 
-        char[][] board = BoardX.getBoard();
+        System.out.println("Please select a tile.");
 
-        BoardX.printBoard(board);
+        gameState.gameStateX();
 
-        System.out.println("Who's first?");
     }
 
 }

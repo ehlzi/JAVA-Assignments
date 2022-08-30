@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Board {
+public class BoardXX {
 
     static final int scRange = 9;
 
