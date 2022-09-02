@@ -3,8 +3,6 @@ class DataTypes {
   public static void main(String[] args) {
     
     String theirResults = "Their Results: ";
-
-    "if im coding here"
     String myResults = "My Results: ";
     String exOne = "***Excercise One: ";
     String exTwo = "***Excercise Two: ";
